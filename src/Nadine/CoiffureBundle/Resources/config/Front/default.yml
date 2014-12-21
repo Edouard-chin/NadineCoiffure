@@ -1,0 +1,3 @@
+nadine_coiffure_front_home:
+    path:      /
+    defaults:  { _controller: NadineCoiffureBundle:Front/Default:index }

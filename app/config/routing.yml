@@ -1,0 +1,4 @@
+nadine_coiffure:
+    resource: "@NadineCoiffureBundle/Resources/config/routing.yml"
+    prefix:   /
+

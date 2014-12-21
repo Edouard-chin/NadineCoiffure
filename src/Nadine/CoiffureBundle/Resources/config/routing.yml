@@ -1,0 +1,4 @@
+nadine_coiffure_front:
+    resource: "@NadineCoiffureBundle/Resources/config/Front/default.yml"
+    prefix:   /
+
