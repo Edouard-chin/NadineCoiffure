@@ -2,3 +2,8 @@ nadine_coiffure_front:
     resource: "@NadineCoiffureBundle/Resources/config/Front/default.yml"
     prefix:   /
 
+nadine_coiffure_front_form_open:
+    path: /form/open
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'NadineCoiffureBundle:Front/Default:reservation-form.html.twig'

@@ -35,7 +35,8 @@
         {% endjavascripts %}
 
     </head>
-    <body class="m-has-style-switcher">
+    {# .m-has-style-switcher to activate it #}
+    <body>
 
         <!-- HEADER : begin -->
         <header id="header" class="m-animated">
@@ -131,7 +132,7 @@
 
                         <!-- HEADER RESERVATION : begin -->
                         <div class="header-reservation">
-                            <a href="ajax/reservation-form.html" class="c-button m-open-ajax-modal">Make a Reservation</a>
+                            <a href="{{ path('nadine_coiffure_front_form_open') }}" class="c-button m-open-ajax-modal">Réserver un soin</a>
                         </div>
                         <!-- HEADER RESERVATION : end -->
 
@@ -143,7 +144,7 @@
                                 <li>
                                     <div class="item-inner">
                                         <i class="ico fa fa-phone"></i>
-                                        <strong>321 654 987</strong>
+                                        <strong>01.45.83.65.02</strong>
                                     </div>
                                 </li>
                                 <!-- PHONE : end -->
@@ -152,7 +153,7 @@
                                 <li>
                                     <div class="item-inner">
                                         <i class="ico fa fa-envelope-o"></i>
-                                        <a href="#">hello@beautyspot.com</a>
+                                        <a href="#">nadine@contact.com</a>
                                     </div>
                                 </li>
                                 <!-- EMAIL : end -->
@@ -161,9 +162,9 @@
                                 <li>
                                     <div class="item-inner">
                                         <i class="ico fa fa-map-marker"></i>
-                                        <strong>BEAUTYSPOT</strong><br>
-                                        9015 Sunset Boulevard<br>
-                                        Ca 90069
+                                        <strong>Nadine M.</strong><br>
+                                        107 Rue de Patay<br>
+                                        75013 PARIS
                                     </div>
                                 </li>
                                 <!-- ADDRESS : end -->
@@ -173,12 +174,12 @@
                                     <div class="item-inner">
                                         <i class="ico fa fa-clock-o"></i>
                                         <dl>
-                                            <dt>Mo. - Fr.:</dt>
-                                            <dd>10:00 - 16:00</dd>
-                                            <dt>Sa.:</dt>
-                                            <dd>10:00 - 14:00</dd>
-                                            <dt>Su.:</dt>
-                                            <dd>Closed</dd>
+                                            <dt>Ma. - Sa.:</dt>
+                                            <dd>9h00 - 19h00</dd>
+                                            <dt>Ve:</dt>
+                                            <dd>20h30</dd>
+                                            <dt>Lu. - Di:</dt>
+                                            <dd>Fermé</dd>
                                         </dl>
                                     </div>
                                 </li>
@@ -208,6 +209,7 @@
 
         <!-- WRAPPER : begin -->
         <div id="wrapper">
+          {% block container %} {% endblock %}
           <!-- FOOTER : begin -->
           <footer id="footer">
             <div class="container">
