@@ -45,7 +45,7 @@
 
                     <!-- HEADER BRANDING : begin -->
                     <div class="header-branding">
-                        <a href="index-2.html"><img src="{{ asset('bundles/nadinecoiffure/images/demo/logo.png') }}" alt="BeautySpot" data-hires="images/logo.2x.png" width="291"></a>
+                        <a href="{{ path('nadine_coiffure_front_home') }}"><img src="{{ asset('bundles/nadinecoiffure/images/demo/logo.png') }}" alt="BeautySpot" data-hires="images/logo.2x.png" width="291"></a>
                     </div>
                     <!-- HEADER BRANDING : end -->
 
@@ -57,40 +57,40 @@
                             <button class="header-menu-toggle" type="button"><i class="fa fa-bars"></i>MENU</button>
                             <ul>
                                 <li class="m-active">
-                                    <span><a href="index-2.html">Front Page</a></span>
+                                    <span><a href="{{ path('nadine_coiffure_front_home') }}">Accueil</a></span>
                                 </li>
                                 <li>
-                                    <span><a href="services.html">Pages</a></span>
+                                    <span><a href="#">La coiffure</a></span>
                                     <ul class="sub-menu">
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="elements.html">Elements</a></li>
-                                        <li><a href="search-results.html">Search Results</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                        <li><a href="documentation.html">Documentation</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Liens</a></li>
+                                        <li><a href="#">Lien</a></li>
+                                        <li><a href="#">Lien</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span><a href="shop-list.html">Shop</a></span>
+                                    <span><a href="shop-list.html">Le hammam</a></span>
                                     <ul class="sub-menu">
-                                        <li><a href="shop-list.html">Product List</a></li>
-                                        <li><a href="shop-detail.html">Product Detail</a></li>
-                                        <li><a href="shop-cart.html">Cart Detail</a></li>
-                                        <li><a href="shop-checkout.html">Checkout</a></li>
+                                        <li><a href="shop-list.html">Lien</a></li>
+                                        <li><a href="shop-detail.html">Lien</a></li>
+                                        <li><a href="shop-cart.html">Lien</a></li>
+                                        <li><a href="shop-checkout.html">Lien</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span><a href="blog.html">Blog</a></span>
+                                    <span><a href="blog.html">L'esthetique</a></span>
                                     <ul class="sub-menu">
-                                        <li><a href="blog.html">Article List</a></li>
-                                        <li><a href="blog-image.html">Image Article</a></li>
-                                        <li><a href="blog-video.html">Video Article</a></li>
-                                        <li><a href="blog-audio.html">Audio Article</a></li>
-                                        <li><a href="blog-quote.html">Quote Article</a></li>
-                                        <li><a href="blog-link.html">Link Article</a></li>
-                                        <li><a href="blog-image-disqus.html">Disqus Comments</a></li>
+                                        <li><a href="blog.html">Lien</a></li>
+                                        <li><a href="blog-image.html">Lien</a></li>
+                                        <li><a href="blog-video.html">Lien</a></li>
+                                        <li><a href="blog-audio.html">Lien</a></li>
+                                        <li><a href="blog-quote.html">Lien</a></li>
+                                        <li><a href="blog-link.html">Lien</a></li>
+                                        <li><a href="blog-image-disqus.html">Lien</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -101,11 +101,11 @@
                         <!-- HEADER MENU : end -->
 
                         <!-- HEADER CART : begin -->
-                        <div class="header-cart">
+                        {# <div class="header-cart">
                             <div class="header-cart-inner">
                                 <a href="shop-cart.html"><i class="cart-ico fa fa-shopping-cart"></i><span class="cart-label">Cart</span><span class="cart-count">(3 items)</span></a>
                             </div>
-                        </div>
+                        </div> #}
                         <!-- HEADER CART : end -->
 
                         <!-- HEADER SEARCH : begin -->
@@ -113,9 +113,9 @@
                             <div class="header-search-inner">
                                 <form class="search-form" action="http://demos.volovar.net/beautyspot.html/demo/search-results.html">
                                     <i class="search-ico fa fa-search"></i>
-                                    <input class="search-input" type="text" placeholder="Search for...">
+                                    <input class="search-input" type="text" placeholder="Entrer votre recherche">
                                     <button class="search-submit" type="submit"><i class="fa fa-angle-right"></i></button>
-                                    <button class="search-toggle" type="button">Search</button>
+                                    <button class="search-toggle" type="button">Rechercher</button>
                                 </form>
                             </div>
                             <button class="search-toggle-mobile" type="button"><i class="fa"></i></button>
@@ -153,7 +153,7 @@
                                 <li>
                                     <div class="item-inner">
                                         <i class="ico fa fa-envelope-o"></i>
-                                        <a href="#">nadine@contact.com</a>
+                                        <a href="mailto:nadine@contact.com">nadine@contact.com</a>
                                     </div>
                                 </li>
                                 <!-- EMAIL : end -->
@@ -217,7 +217,7 @@
               <div class="footer-twitter m-paginated" data-id="LubosBudkovsky" data-limit="3" data-interval="12000">
                 <div class="footer-twitter-inner">
                   <i class="ico fa fa-twitter"></i>
-                  <h4 class="twitter-title"><a href="https://twitter.com/LubosBudkovsky">@LubosBudkovsky</a></h4>
+                  <h4 class="twitter-title"><a href="#">@NadineCoiffure</a></h4>
                   <div class="twitter-feed">
                     <span class="c-loading-anim"><span></span></span>
                   </div>
@@ -231,9 +231,9 @@
                     <!-- FOOTER MENU : begin -->
                     <nav class="footer-menu">
                       <ul>
-                        <li><a href="index-2.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="{{ path('nadine_coiffure_front_home') }}">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Documentation</a></li>
                       </ul>
                     </nav>
                     <!-- FOOTER MENU : end -->
@@ -241,7 +241,7 @@
                   <div class="col-md-6 col-md-pull-6">
                     <!-- FOOTER TEXT : begin -->
                     <div class="footer-text">
-                        <p>Buy this template on <a href="http://themeforest.net/user/LubosVolovar/portfolio?ref=LubosVolovar">ThemeForest.net</a></p>
+                        {# <p>Buy this template on <a href="http://themeforest.net/user/LubosVolovar/portfolio?ref=LubosVolovar">ThemeForest.net</a></p> #}
                     </div>
                     <!-- FOOTER TEXT : end -->
                   </div>
