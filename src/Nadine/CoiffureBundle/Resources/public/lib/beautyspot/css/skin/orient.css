@@ -651,10 +651,10 @@ a:hover {
     background-image: linear-gradient(to right,  rgba(255, 155, 13, 0.5), transparent);
 }
 #core.core-bg-1 {
-    background: url("../../../images/core_bg_01.jpg") right 0 no-repeat;
+    background: url("../../../../images/demo/core_bg_01.jpg") right 0 no-repeat;
 }
 #core.core-bg-2 {
-    background: url("../../../images/core_bg_02.jpg") right 0 no-repeat;
+    background: url("../../../../images/demo/core_bg_02.jpg") right 0 no-repeat;
 }
 #page-header h1 {
     color: #3f3f3f;
