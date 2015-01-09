@@ -1,3 +1,7 @@
 nadine_coiffure_front_home:
     path:      /
     defaults:  { _controller: NadineCoiffureBundle:Front/Default:index }
+
+nadine_coiffure_front_services:
+    path:      /services
+    defaults:  { _controller: NadineCoiffureBundle:Front/Default:services }

@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('NadineCoiffureBundle:Front/Default:index.html.twig');
     }
+
+    public function servicesAction()
+    {
+        return $this->render('NadineCoiffureBundle:Front/Default:services.html.twig');
+    }
 }
