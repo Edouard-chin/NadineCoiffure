@@ -71,3 +71,11 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+liip_imagine:
+    filter_sets:
+        # Prototype
+        slider_small:
+            quality: 90
+            filters:
+                thumbnail: { size: [334, 243], mode: outbound }
