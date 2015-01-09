@@ -1,0 +1,86 @@
+{% extends '::base.html.twig' %}
+{% block container %}
+
+
+      <!-- CORE : begin -->
+      <div id="core">
+
+        <!-- PAGE HEADER : begin -->
+        <div id="page-header">
+          <div class="container">
+            <h1>Contact</h1>
+            <ul class="breadcrumbs">
+              <li><a href="{{ path('nadine_coiffure_front_home') }}">Accueil</a></li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <!-- PAGE HEADER : begin -->
+
+        <div class="container">
+
+          <!-- PAGE CONTENT : begin -->
+          <div id="page-content">
+            <div class="various-content">
+
+              <!-- ADDRESS SECTION : begin -->
+              <section>
+
+                <h2>Ou se site notre salon</h2>
+
+                <div class="row">
+                  <div class="col-lg-8">
+
+                    <!-- MAP : begin -->
+                    <div class="c-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2626.6205791352313!2d2.3715772!3d48.827300400000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67225b80bf8b7%3A0xd685017c88bb5e21!2s107+Rue+de+Patay%2C+75013+Paris!5e0!3m2!1sfr!2sfr!4v1420765667676" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    </div>
+                    <!-- MAP : end -->
+
+                  </div>
+                  <div class="col-lg-4">
+
+                    <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.Aliquam lorem ante, dapibus in.</p>
+
+                    <!-- ICON BLOCK : begin -->
+                    <div class="c-icon-block">
+                      <i class="ico fa fa-map-marker"></i>
+                      <div class="icon-block-inner">
+                        <p>
+                          <strong>NADINE COIFFURE</strong><br>
+                          107 Rue de Patay<br>
+                          75013 PARIS
+                        </p>
+                      </div>
+                    </div>
+                    <!-- ICON BLOCK : end -->
+
+                    <!-- ICON BLOCK : begin -->
+                    <div class="c-icon-block">
+                      <i class="ico fa fa-clock-o"></i>
+                      <div class="icon-block-inner">
+                        <dl>
+                          <dt>Ma. - Sa.:</dt>
+                          <dd>09h00 - 19:00</dd>
+                          <dt>Ve.:</dt>
+                          <dd>20h30</dd>
+                          <dt>Lu - Di.:</dt>
+                          <dd>Fermé</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <!-- ICON BLOCK : end -->
+
+                  </div>
+                </div>
+
+              </section>
+
+            </div>
+          </div>
+          <!-- PAGE CONTENT : end -->
+
+        </div>
+
+      </div>
+{% endblock %}

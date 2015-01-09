@@ -15,4 +15,9 @@ class DefaultController extends Controller
     {
         return $this->render('NadineCoiffureBundle:Front/Default:services.html.twig');
     }
+
+    public function contactAction()
+    {
+        return $this->render('NadineCoiffureBundle:Front/Default:contact.html.twig');
+    }
 }
