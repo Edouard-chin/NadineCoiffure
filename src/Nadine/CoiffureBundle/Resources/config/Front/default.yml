@@ -9,3 +9,7 @@ nadine_coiffure_front_services:
 nadine_coiffure_front_contact:
     path:      /contact
     defaults:  { _controller: NadineCoiffureBundle:Front/Default:contact }
+
+nadine_coiffure_front_gallery:
+    path:      /gallery
+    defaults:  { _controller: NadineCoiffureBundle:Front/Default:gallery }

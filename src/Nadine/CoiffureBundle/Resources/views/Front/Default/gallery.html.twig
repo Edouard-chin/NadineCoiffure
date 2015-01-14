@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+{% block container %}
+      <div id="core">
+        <div id="page-header">
+          <div class="container">
+            <h1>Gallery</h1>
+            <ul class="breadcrumbs">
+              <li><a href="{{ path('nadine_coiffure_front_home') }}">Accueil</a></li>
+              <li>Gallerie</li>
+            </ul>
+          </div>
+        </div>
+        <div id="page-content">
+          <div class="various-content">
+            <div class="c-gallery">
+              <div class="thumb-list">
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/bac-lavage.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/bac-lavage.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/bougies.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/bougies.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/table-massage.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/table-massage.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/mirroir.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/mirroir.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/salon-global.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/salon-global.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+                <div class="thumb"><a href="{{ asset('bundles/nadinecoiffure/images/table-gommage-portrait.jpg') }}" class="lightbox" data-lightbox-group="gallery"><img src="{{ asset('bundles/nadinecoiffure/images/table-gommage-portrait.jpg') | imagine_filter('slider_small') }}" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}
