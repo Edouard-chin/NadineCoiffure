@@ -54,9 +54,10 @@
 
                         <!-- HEADER MENU : begin -->
                         <nav class="header-menu">
+                            {% set route = app.request.attributes.get('_route') %}
                             <button class="header-menu-toggle" type="button"><i class="fa fa-bars"></i>MENU</button>
                             <ul>
-                                <li class="m-active">
+                                <li {% if route == 'nadine_coiffure_front_home' %} class="m-active" {% endif %}>
                                     <span><a href="{{ path('nadine_coiffure_front_home') }}">Accueil</a></span>
                                 </li>
                                 {# <li>
@@ -93,13 +94,13 @@
                                         <li><a href="#">Lien</a></li>
                                     </ul>
                                 </li> #}
-                                <li>
+                                <li {% if route == 'nadine_coiffure_front_contact' %} class="m-active" {% endif %}>
                                     <span><a href="{{ path('nadine_coiffure_front_contact') }}">Contact</a></span>
                                 </li>
-                                <li>
+                                <li {% if route == 'nadine_coiffure_front_services' %} class="m-active" {% endif %}>
                                     <span><a href="{{ path('nadine_coiffure_front_services') }}">Nos services</a></span>
                                 </li>
-                                <li>
+                                <li {% if route == 'nadine_coiffure_front_gallery' %} class="m-active" {% endif %}>
                                     <span><a href="{{ path('nadine_coiffure_front_gallery') }}">Gallerie</a></span>
                                 </li>
                             </ul>
